@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
 :root {
     /* change the values below to your colors from your palette */
     --primary-color: #346fae;
@@ -28,6 +31,10 @@
 
 body {
     background-color: #fefefe;
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 #content {
@@ -42,6 +49,8 @@ header {
 footer {
     background-color: var(--nav-background-color);
     color: var(--nav-link-color);
+    padding: 25px 50px;
+    margin-top: 20px;
 }
 
 footer a,
@@ -49,6 +58,7 @@ nav a {
     text-align: center;
     color: var(--nav-link-color);
     text-decoration: none;
+    padding: 35px;
 }
 
 footer a:hover,
@@ -65,8 +75,22 @@ footer p a:hover {
     text-decoration: underline;
 }
 
+footer .social img {
+    padding-top: 15px;
+}
+
 .home-title {
     color: var(--accent2-color);
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--heading-font);
+}
+
+h2 {
+    margin: 0;
 }
 
 h4 {
@@ -86,11 +110,23 @@ main section {
     text-align: center;
 }
 
+main section img {
+    box-sizing: border-box;
+}
+
 .book,
 .join {
     background-color: var(--accent3-color);
     color: var(--paragraph-color-on-color);
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.card-img {
+    border: 10px solid var(--accent3-color);
 }
 
 .book:hover,
@@ -107,6 +143,8 @@ main section {
 
 .msg {
     background-color: var(--secondary-color);
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 
@@ -116,8 +154,18 @@ main section {
 
 .msg p {
     color: var(--headline-color-on-color);
+    font-size: 0.8em;
+    padding-bottom: 15px;
 }
 
 .icon {
     width: 80px;
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
 }
