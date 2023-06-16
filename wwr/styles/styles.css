@@ -57,7 +57,7 @@ footer {
     background-color: var(--nav-background-color);
     color: var(--nav-link-color);
     padding: 25px 50px;
-    margin-top: 200px;
+    margin-top: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -259,6 +259,77 @@ main section img {
 #hero-msg h1,
 #hero-msg h4 {
     color: white;
+}
+
+/* Dates and rates page */
+
+.dates-rates-title {
+    text-align: center;
+    font-weight: unset;
+    margin: 60px auto;
+}
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 600px);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.trip-card {
+    background-color: var(--secondary-color);
+    color: var(--paragraph-color-on-color);
+    max-width: 550px;
+    margin: 10px auto;
+    padding: 15px;
+}
+
+.trip-card-hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    vertical-align: middle;
+    background-color: black;
+    width: 550px;
+}
+
+.trip-card-header {
+    z-index: 2;
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+}
+
+.trip-card-image {
+    grid-column: 1;
+    grid-row: 1;
+    opacity: 70%;
+    width: 550px;
+}
+
+.trip-card-rate {
+    margin: 15px auto;
+}
+
+.trip-card-rate p {
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+.trip-card-dates-block ul {
+    columns: 2;
+}
+
+.trip-card-dates-block li {
+    list-style-type: none;
+}
+
+.trip-card-remarks {
+    margin-bottom: 30px;
+}
+
+.trip-card .button-box {
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 900px) {
