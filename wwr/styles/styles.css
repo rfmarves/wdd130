@@ -129,6 +129,7 @@ main section img {
     box-sizing: border-box;
 }
 
+.send,
 .book,
 .join {
     background-color: var(--accent3-color);
@@ -152,6 +153,7 @@ main section img {
     transform: scale(1.1);
 }
 
+.send:hover,
 .book:hover,
 .join:hover {
     background-color: var(--accent2-color);
@@ -328,6 +330,65 @@ main section img {
 
 .trip-card .button-box {
     margin-bottom: 20px;
+}
+
+/* Contact us CSS */
+.contactus_main {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contactus_main h1 {
+    text-align: center;
+}
+
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;
+}
+
+.moveDown {
+    margin-top: 3em;
+}
+
+#contact_form {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+#contact_form>* {
+    margin-bottom: 15px;
+}
+
+#contact_form textarea {
+    height: 200px; 
+}
+
+textarea,
+input {
+    border-radius: 3pt;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.button_container {
+    grid-column: 1/3;
+    text-align: center;
+}
+
+#contact_form label {
+    vertical-align: top;
+}
+
+#contact_form .send {
+    border:none;
+    margin: 0;
 }
 
 @media screen and (max-width: 900px) {
